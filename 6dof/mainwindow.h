@@ -33,23 +33,13 @@ private slots:
 
     void on_textEdit_9_textChanged();
 
-    void on_horizontalSlider_9_sliderMoved(int position);
-
-    void on_horizontalSlider_8_sliderMoved(int position);
-
-    void on_horizontalSlider_7_sliderMoved(int position);
-
     void on_textEdit_textChanged();
 
     void on_textEdit_2_textChanged();
 
     void on_textEdit_3_textChanged();
 
-    void on_horizontalSlider_rangeChanged(int min, int max);
-
     void on_pushButton_clicked();
-
-    void on_horizontalSlider_actionTriggered(int action);
 
     void on_horizontalSlider_valueChanged(int value);
 
@@ -63,6 +53,40 @@ private slots:
 
     void on_horizontalSlider_6_valueChanged(int value);
 
+    void on_comboBox_currentIndexChanged(const QString &arg1);
+
+    void GiveStringforArduino();
+
+    void on_horizontalSlider_9_valueChanged(int value);
+
+    void on_horizontalSlider_8_valueChanged(int value);
+
+    void on_horizontalSlider_7_valueChanged(int value);
+
+    void RPYfusion();
+
+    void on_horizontalSlider_10_valueChanged(int value);
+
+    void on_horizontalSlider_11_valueChanged(int value);
+
+    void on_horizontalSlider_12_valueChanged(int value);
+
+    void on_pbChangeData_clicked();
+
+    void Caculate();
+
+    void getSetting();
+
+    void on_btnSaveSetting_clicked();
+
+    void on_teX_textChanged();
+
+    void on_teY_textChanged();
+
+    void on_teZ_textChanged();
+
+    int fixToRightInput(int value);
+
 private:
     Ui::MainWindow *ui;
     QSerialPort *arduino;
@@ -70,6 +94,7 @@ private:
     static const quint16 arduino_uno_product_id = 68;
     QString arduino_port_name;
     bool arduino_is_available;
+
 };
 
 #endif // MAINWINDOW_H

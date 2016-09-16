@@ -13,8 +13,12 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    basic6dof.cpp \
+    servo6dof.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    basic6dof.h \
+    servo6dof.h
 
 FORMS    += mainwindow.ui
